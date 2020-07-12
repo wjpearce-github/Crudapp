@@ -1,0 +1,71 @@
+{% extends 'layout.html' %}
+
+{% block body_content %}
+    <h1>Update a Game</h1>
+
+    <div class="form">
+        <form method="post" action="">
+            {{ form.hidden_tag() }}
+            <div class="form-group">
+                {{ form.game.label }}
+                {{ form.game }}
+
+                {% if form.game.errors %}
+                    <div class="error">
+                        {% for error in form.game.errors %}
+                            <span>{{ error }}</span>
+                        {% endfor %}
+                    </div>
+                {% endif %}
+            </div>
+            <br>
+            <br>
+            <div class="form-group">
+                {{ form.platform.label }}
+                {{ form.platform }}
+
+                {% if form.platform.errors %}
+                    <div class="error">
+                        {% for error in form.platform.errors %}
+                            <span>{{ error }}</span>
+                        {% endfor %}
+                    </div>
+                {% endif %}
+            </div>
+            <br>
+            <br>
+            <div class="form-group">
+                {{ form.score.label }}
+                {{ form.score }}
+
+                {% if form.score.errors %}
+                    <div class="error">
+                        {% for error in form.score.errors %}
+                            <span>{{ error }}</span>
+                        {% endfor %}
+                    </div>
+                {% endif %}
+            </div>
+            <br>
+            <br>
+            <div class="form-group">
+            {{ form.finished.label }}
+            {{ form.finished }}
+
+            {% if form.finished.errors %}
+                    <div class="error">
+                        {% for error in form.finished.errors %}
+                            <span>{{ error }}</span>
+                        {% endfor %}
+                    </div>
+                {% endif %}
+            </div>
+            <br>
+            <br>
+
+            <div class="form-group">
+                {{ form.submit }}
+            </div>
+        </form>
+    </div>
+{% endblock %}

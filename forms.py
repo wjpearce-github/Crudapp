@@ -107,6 +107,44 @@ class LoginForm(FlaskForm):
     remember = BooleanField('Remember Me')
     submit = SubmitField('Login')
 
+
+class UpdateGamesForm(FlaskForm):
+
+    game = StringField(
+        'game',
+        validators=[
+            DataRequired(),
+            Length(min=1, max=30)
+        ]
+    )
+
+    platform = StringField(
+        'platform ',
+        validators=[
+            DataRequired(),
+            Length(min=1, max=30)
+        ]
+    )
+
+    score = StringField(
+        'score',
+        validators=[
+            DataRequired(),
+            Length(min=2, max=100)
+        ]
+    )
+
+    finished = StringField(
+        'finished',
+        validators=[
+            DataRequired(),
+            Length(min=4, max=300)
+        ]
+    )
+
+
+    submit = SubmitField('Update Game')
+
 class UpdateAccountForm(FlaskForm):
     first_name = StringField('First Name',
         validators=[

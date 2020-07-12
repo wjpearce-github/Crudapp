@@ -4,7 +4,7 @@ from flask import Flask, redirect, url_for, request
 from flask import render_template
 from flask_sqlalchemy import SQLAlchemy
 from os import environ
-from forms import RegistrationForm, GamesForm, LoginForm, UpdateAccountForm
+from forms import RegistrationForm, GamesForm, LoginForm, UpdateAccountForm, UpdateGamesForm
 from flask_bcrypt import Bcrypt
 from flask_login import UserMixin, login_manager, login_user, current_user, login_required, logout_user, LoginManager
 
@@ -66,6 +66,8 @@ class Users(db.Model, UserMixin):
     last_name = db.Column(db.String(30), nullable=False)
     email = db.Column(db.String(150), nullable=False, unique=True)
     password = db.Column(db.String(500), nullable=False)
+    games = db.relationship('Games', backref='author', lazy=True)
+
 
     def __repr__(self):
         return ''.join([
@@ -176,30 +178,38 @@ def login():
     return render_template('login.html', title='Login', form=form)
 
 
-
-
-
-
-
-
-
-
-
-@app.route('/account', methods=['GET', 'POST'])
+@app.route('/update/<int:number>', methods=['GET', 'POST'])
 @login_required
-def account():
-    form = UpdateAccountForm()
+def updategame(number):
+    form = UpdateGamesForm()
+    gamesupdate = Games.query.filter_by(id=number).first()
     if form.validate_on_submit():
-        current_user.first_name = form.first_name.data
-        current_user.last_name = form.last_name.data
-        current_user.email = form.email.data
+        gamesupdate.game = form.game.data
+        gamesupdate.platform = form.platform.data
+        gamesupdate.score = form.score.data
+        gamesupdate.finished = form.finished.data
         db.session.commit()
-        return redirect(url_for('account'))
+        return redirect(url_for('home'))
     elif request.method == 'GET':
-        form.first_name.data = current_user.first_name
-        form.last_name.data = current_user.last_name
-        form.email.data = current_user.email
-    return render_template('account.html', title='Account', form=form)
+        form.game.data = gamesupdate.game
+        form.platform.data = gamesupdate.platform
+        form.score.data = gamesupdate.score
+        form.finished.data = gamesupdate.finished
+    return render_template('update.html', title='Update Game', form=form)
+
+
+@app.route('/deletegame/<int:delete>', methods=["GET", "POST", "DELETE"])
+@login_required
+def deletegame(delete):
+    game = Games.query.filter_by(id=delete).current_user()
+    gamesdelete = Games.__table__.delete().where(Games.id == game.id)
+    db.session.execute(gamesdelete)
+    db.session.commit()
+    return redirect(url_for('home'))
+
+
+
+
 
 @app.route("/account/delete", methods=["GET", "POST"])
 @login_required
@@ -218,7 +228,21 @@ def account_delete():
     db.session.commit()
     return redirect(url_for('register'))
 
-
+@app.route('/account', methods=['GET', 'POST'])
+@login_required
+def account():
+    form = UpdateAccountForm()
+    if form.validate_on_submit():
+        current_user.first_name = form.first_name.data
+        current_user.last_name = form.last_name.data
+        current_user.email = form.email.data
+        db.session.commit()
+        return redirect(url_for('account'))
+    elif request.method == 'GET':
+        form.first_name.data = current_user.first_name
+        form.last_name.data = current_user.last_name
+        form.email.data = current_user.email
+    return render_template('account.html', title='Account', form=form)
 
 
 
