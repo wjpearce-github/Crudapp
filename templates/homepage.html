@@ -1,0 +1,15 @@
+{% extends 'layout.html' %}
+
+{% block body_content %}
+    <h1>Gamelogger!</h1>
+
+    {% for addgame in games %}
+        <div>
+            <!--<h3>{{ addgame.title }}</h3> -->
+            <p><b>Game: {{ addgame.game }}</b></p>
+            <p>Platform: {{ addgame.platform }}</p>
+            <p>Score: {{ addgame.score }}</p>
+            <p>Finished: {{ addgame.finished }}</p>
+        </div>
+    {% endfor %}
+{% endblock %}

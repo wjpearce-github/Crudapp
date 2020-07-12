@@ -1,0 +1,40 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    {% if title %}
+        <title>{{ title }}</title>
+    {% else %}
+        <title>Unknown title</title>
+    {% endif %}
+
+</head>
+<body>
+	{% if current_user.is_authenticated %}
+	<a href="{{ url_for('logout') }}">Log Out</a>
+        <a href="{{ url_for('home') }}">Home</a>
+        <a href="{{ url_for('account') }}">Account</a>
+
+	{% else %}
+	<a href="{{ url_for('login') }}">Login</a>
+        <a href="{{ url_for('home') }}">Home</a>
+	<a href="{{ url_for('register') }}">Register</a>
+	{% endif %}
+<h1>{{  title  }} Page</h1>
+
+</head>
+<body>
+    <div class="navbar">
+        <a href="{{ url_for('about') }}">About</a>
+        <br>
+        <a href="{{ url_for('add') }}">Add a Game</a>
+
+
+
+    </div>
+
+    {% block body_content %}{% endblock %}
+
+</body>
+</html>
