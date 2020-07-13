@@ -87,7 +87,7 @@ class Users(db.Model, UserMixin):
 @app.route('/home')
 def home():
     post_data = Games.query.filter_by(user_id=current_user.id).all()
-    return render_template('homepage.html', title='Home', games=post_data)
+    return render_template('homepage.html', title='Homepage', games=post_data)
 
 
 
@@ -132,7 +132,7 @@ def add():
 @app.route('/create')
 def create():
     db.create_all()
-    db.session.add()
+#   db.session.add()
     db.session.commit()
     return 'Database created'
 
@@ -178,34 +178,47 @@ def login():
     return render_template('login.html', title='Login', form=form)
 
 
-@app.route('/update/<int:number>', methods=['GET', 'POST'])
-@login_required
-def updategame(number):
-    form = UpdateGamesForm()
-    gamesupdate = Games.query.filter_by(id=number).first()
-    if form.validate_on_submit():
-        gamesupdate.game = form.game.data
-        gamesupdate.platform = form.platform.data
-        gamesupdate.score = form.score.data
-        gamesupdate.finished = form.finished.data
-        db.session.commit()
-        return redirect(url_for('home'))
-    elif request.method == 'GET':
-        form.game.data = gamesupdate.game
-        form.platform.data = gamesupdate.platform
-        form.score.data = gamesupdate.score
-        form.finished.data = gamesupdate.finished
-    return render_template('update.html', title='Update Game', form=form)
+
+
+
+
+
+
+# @app.route('/update/<int:update>', methods=['GET', 'POST'])
+# @login_required
+# def updategame(update):
+#     form = UpdateGamesForm()
+#     gamesupdate = Games.query.filter_by(id=update).first()
+#     if form.validate_on_submit():
+#         gamesupdate.game = form.game.data
+#         gamesupdate.platform = form.platform.data
+#         gamesupdate.score = form.score.data
+#         gamesupdate.finished = form.finished.data
+#         db.session.commit()
+#         return redirect(url_for('home'))
+#     elif request.method == 'GET':
+#         form.game.data = gamesupdate.game
+#         form.platform.data = gamesupdate.platform
+#         form.score.data = gamesupdate.score
+#         form.finished.data = gamesupdate.finished
+#     return render_template('update.html', title='Update Game', form=form)
+
+
+
 
 
 @app.route('/deletegame/<int:delete>', methods=["GET", "POST", "DELETE"])
 @login_required
 def deletegame(delete):
-    game = Games.query.filter_by(id=delete).current_user()
-    gamesdelete = Games.__table__.delete().where(Games.id == game.id)
+    gamesdelete = Games.__table__.delete().where(Games.id == delete)
     db.session.execute(gamesdelete)
     db.session.commit()
     return redirect(url_for('home'))
+
+
+
+
+
 
 
 
