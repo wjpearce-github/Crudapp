@@ -126,11 +126,11 @@ class UpdateGamesForm(FlaskForm):
         ]
     )
 
-    score = StringField(
-        'score',
+    score = IntegerField(
+        'Score out of 10',
         validators=[
             DataRequired(),
-            Length(min=2, max=100)
+            NumberRange(min=1, max=10)
         ]
     )
 
@@ -138,7 +138,7 @@ class UpdateGamesForm(FlaskForm):
         'finished',
         validators=[
             DataRequired(),
-            Length(min=4, max=300)
+            Length(min=1, max=300)
         ]
     )
 

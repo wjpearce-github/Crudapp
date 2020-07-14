@@ -184,24 +184,24 @@ def login():
 
 
 
-# @app.route('/update/<int:update>', methods=['GET', 'POST'])
-# @login_required
-# def updategame(update):
-#     form = UpdateGamesForm()
-#     gamesupdate = Games.query.filter_by(id=update).first()
-#     if form.validate_on_submit():
-#         gamesupdate.game = form.game.data
-#         gamesupdate.platform = form.platform.data
-#         gamesupdate.score = form.score.data
-#         gamesupdate.finished = form.finished.data
-#         db.session.commit()
-#         return redirect(url_for('home'))
-#     elif request.method == 'GET':
-#         form.game.data = gamesupdate.game
-#         form.platform.data = gamesupdate.platform
-#         form.score.data = gamesupdate.score
-#         form.finished.data = gamesupdate.finished
-#     return render_template('update.html', title='Update Game', form=form)
+@app.route('/update/<int:update>', methods=['GET', 'POST'])
+@login_required
+def updategame(update):
+    form = UpdateGamesForm()
+    gamesupdate = Games.query.filter_by(id=update).first()
+    if form.validate_on_submit():
+        gamesupdate.game = form.game.data
+        gamesupdate.platform = form.platform.data
+        gamesupdate.score = form.score.data
+        gamesupdate.finished = form.finished.data
+        db.session.commit()
+        return redirect(url_for('home'))
+    elif request.method == 'GET':
+        form.game.data = gamesupdate.game
+        form.platform.data = gamesupdate.platform
+        form.score.data = gamesupdate.score
+        form.finished.data = gamesupdate.finished
+    return render_template('update.html', title='Update Game', form=form)
 
 
 

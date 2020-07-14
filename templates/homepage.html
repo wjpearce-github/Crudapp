@@ -11,7 +11,13 @@
         <p>Score: {{ addgame.score }}</p>
         <p>Finished: {{ addgame.finished }}</p>
         <td>
-
+            {% if current_user.is_authenticated == True %}
+                <form action="{{ url_for('updategame', update=addgame.id) }}">
+                    <button type="submit">Update</button>
+                </form>
+            {% endif %}
+        </td>
+        </tr>
             {% if current_user.is_authenticated == True %}
                 <form action="{{ url_for('deletegame', delete=addgame.id) }}">
                     <button type="submit">Delete</button>
