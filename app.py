@@ -80,10 +80,12 @@ class Users(db.Model, UserMixin):
 
 
 
-
-
-
 @app.route('/')
+def landing():
+    post_data = Games.query.all
+    return render_template('landing.html', title='Homepage')
+
+
 @app.route('/home')
 def home():
     post_data = Games.query.filter_by(user_id=current_user.id).all()
@@ -156,7 +158,7 @@ def register():
         db.session.add(user)
         db.session.commit()
 
-        return redirect(url_for('home'))
+        return redirect(url_for('add'))
 
     return render_template('registration.html', title='Register', form=form)
 
@@ -174,7 +176,7 @@ def login():
             if next_page:
                 return redirect(next_page)
             else:
-                return redirect(url_for('home'))
+                return redirect(url_for('account'))
     return render_template('login.html', title='Login', form=form)
 
 
