@@ -37,11 +37,11 @@ In addition to being hosted on the cloud and receiving automatic updates. The ap
 #### Trello 
 
 <p align="center">
-    <img width="100" height="100" src="https://imgur.com/qb0fFIW"
+    <img width="100" height="100" src="https://i.imgur.com/qb0fFIW.png"
     </p>
 
 <p align="center">
-    <img width="100" height="100" src="https://imgur.com/Uqa7vbn"
+    <img width="100" height="100" src="https://i.imgur.com/Uqa7vbn.png"
     </p>
 
 Trello above: Splitting up Must Have, Should Have and Could Have for accounts and app functionality. Additionally, showing project sprints in orange. 
@@ -51,8 +51,8 @@ Trello above: Splitting up Must Have, Should Have and Could Have for accounts an
 
 Displayed is the relationship between my two tables in the database hosted on GCP. A one to many relationships from the primary key in the User table joining on the foreign key in the Games table. 
 
-p align="center">
-    <img width="100" height="100" src="https://imgur.com/IHN53sU"
+<p align="center">
+    <img width="100" height="100" src="https://i.imgur.com/IHN53sU.png"
     </p>
 
 
@@ -70,8 +70,8 @@ p align="center">
 
 #### CI Pipeline 
 
-p align="center">
-    <img width="100" height="100" src="https://imgur.com/ZSWJJsV"
+<p align="center">
+    <img width="100" height="100" src="https://i.imgur.com/ZSWJJsV.png"
     </p>
     
     
@@ -85,34 +85,34 @@ p align="center">
 
 #### Wireframe & V1.0 Design
 
-p align="center">
-    <img width="100" height="100" src="https://imgur.com/1f4957W"
+<p align="center">
+    <img width="100" height="100" src="https://i.imgur.com/1f4957W.png"
     </p>
 
-p align="center">
-    <img width="100" height="100" src="https://imgur.com/wu1JZVf"
+<p align="center">
+    <img width="100" height="100" src="https://i.imgur.com/wu1JZVf.png"
     </p>
     
-p align="center">
-    <img width="100" height="100" src="https://imgur.com/tGFZqpw"
+<p align="center">
+    <img width="100" height="100" src="https://i.imgur.com/tGFZqpw.png"
     </p>
     
-p align="center">
-    <img width="100" height="100" src="https://imgur.com/7RxFTv3"
+<p align="center">
+    <img width="100" height="100" src="https://i.imgur.com/7RxFTv3.png"
     </p>
     
-p align="center">
-    <img width="100" height="100" src="https://imgur.com/vHl8rc1"
+<p align="center">
+    <img width="100" height="100" src="https://i.imgur.com/vHl8rc1.png"
     </p>
     
-p align="center">
-    <img width="100" height="100" src="https://imgur.com/GufjAKf"
+<p align="center">
+    <img width="100" height="100" src="https://i.imgur.com/GufjAKf.png"
     </p>
 
 #### Risk Assessment 
 
-p align="center">
-    <img width="100" height="100" src="https://imgur.com/yKjR0gw"
+<p align="center">
+    <img width="100" height="100" src="https://i.imgur.com/yKjR0gw.png"
     </p>
 
 #### Difficulties, Takeaways and Future Improvements 
@@ -122,5 +122,7 @@ In terms of programming the app I found adding the update functionally the most 
 Going forward in the next project I think having a far more basic and realistic original idea would be beneficial. In the start I found there was as direct disconnect between my skill set and project idea considering the time frame. 
 Finally, although not mandatory I would have liked to spend some time adding some CSS to my app as it looks very basic. Possibly in the future even adding some Java script for extended functionality. Additionally, in the next iteration I plan to add a third table listing the Game Developers including information about them.
 
+
+#### William Pearce
 
 
