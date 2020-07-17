@@ -96,7 +96,7 @@ Displayed is the relationship between my two tables in the database hosted on GC
 ### Wireframe & V1.0 Design
 
 <p align="center">
-    <img width="400" height="400" src="https://i.imgur.com/1f4957W.png"
+    <img width="400" height="500" src="https://i.imgur.com/1f4957W.png"
     </p>
 
 <p align="center">
@@ -108,15 +108,15 @@ Displayed is the relationship between my two tables in the database hosted on GC
     </p>
     
 <p align="center">
-    <img width="370" height="500" src="https://i.imgur.com/7RxFTv3.png"
+    <img width="370" height="620" src="https://i.imgur.com/7RxFTv3.png"
     </p>
     
 <p align="center">
-    <img width="400" height="370" src="https://i.imgur.com/vHl8rc1.png"
+    <img width="400" height="310" src="https://i.imgur.com/vHl8rc1.png"
     </p>
     
 <p align="center">
-    <img width="400" height="470" src="https://i.imgur.com/GufjAKf.png"
+    <img width="400" height="410" src="https://i.imgur.com/GufjAKf.png"
     </p>
 
 ### Risk Assessment 
