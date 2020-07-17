@@ -124,6 +124,6 @@ Finally, although not mandatory I would have liked to spend some time adding som
 
 
 ### Author
-#### William Pearce
+##### William Pearce
 
 
