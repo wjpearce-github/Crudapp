@@ -98,11 +98,11 @@ Displayed is the relationship between my two tables in the database hosted on GC
     </p>
     
 <p align="center">
-    <img width="400" height="500" src="https://i.imgur.com/7RxFTv3.png"
+    <img width="400" height="400" src="https://i.imgur.com/7RxFTv3.png"
     </p>
     
 <p align="center">
-    <img width="400" height="500" src="https://i.imgur.com/vHl8rc1.png"
+    <img width="400" height="400" src="https://i.imgur.com/vHl8rc1.png"
     </p>
     
 <p align="center">
