@@ -37,11 +37,11 @@ In addition to being hosted on the cloud and receiving automatic updates. The ap
 #### Trello 
 
 <p align="center">
-    <img width="500" height="500" src="https://i.imgur.com/qb0fFIW.png"
+    <img width="750" height="400" src="https://i.imgur.com/qb0fFIW.png"
     </p>
 
 <p align="center">
-    <img width="500" height="500" src="https://i.imgur.com/Uqa7vbn.png"
+    <img width="750" height="400" src="https://i.imgur.com/Uqa7vbn.png"
     </p>
 
 Trello above: Splitting up Must Have, Should Have and Could Have for accounts and app functionality. Additionally, showing project sprints in orange. 
