@@ -32,9 +32,20 @@ In addition to being hosted on the cloud and receiving automatic updates. The ap
 
 ### Functionality 
 
+For the project I needed to have the ability to manage my databases accordingly with full CRUD functionality. I wanted the user to be able to login to an account and add games with the platform, score, and if they had finished the game. Untimely for users to keep a record of the games they had played.
+
+* As a User I must be able to Register, login and logout of an account.
+* As a User I must have the ability to add Games to my profiles.
+* As a User I must have the ability to delete games I no longer want in the database.
+* As a User I must be able to view all the games I have added 
+* As a User I must have the ability to update the games information I have added.
+* As a User I must be able to delete and update my account.
 
 
 ### Trello 
+
+Trello above: Splitting up Must Have, Should Have and Could Have for accounts and app functionality. Additionally, showing project sprints in orange. 
+
 
 <p align="center">
     <img width="750" height="400" src="https://i.imgur.com/qb0fFIW.png"
@@ -44,7 +55,6 @@ In addition to being hosted on the cloud and receiving automatic updates. The ap
     <img width="750" height="400" src="https://i.imgur.com/Uqa7vbn.png"
     </p>
 
-Trello above: Splitting up Must Have, Should Have and Could Have for accounts and app functionality. Additionally, showing project sprints in orange. 
 
 
 ### Data: ERD Diagram 
