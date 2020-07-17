@@ -37,11 +37,11 @@ In addition to being hosted on the cloud and receiving automatic updates. The ap
 #### Trello 
 
 <p align="center">
-    <img width="500" height="750" src="https://i.imgur.com/qb0fFIW.png"
+    <img width="500" height="500" src="https://i.imgur.com/qb0fFIW.png"
     </p>
 
 <p align="center">
-    <img width="500" height="750" src="https://i.imgur.com/Uqa7vbn.png"
+    <img width="500" height="500" src="https://i.imgur.com/Uqa7vbn.png"
     </p>
 
 Trello above: Splitting up Must Have, Should Have and Could Have for accounts and app functionality. Additionally, showing project sprints in orange. 
@@ -52,7 +52,7 @@ Trello above: Splitting up Must Have, Should Have and Could Have for accounts an
 Displayed is the relationship between my two tables in the database hosted on GCP. A one to many relationships from the primary key in the User table joining on the foreign key in the Games table. 
 
 <p align="center">
-    <img width="500" height="750" src="https://i.imgur.com/IHN53sU.png"
+    <img width="500" height="500" src="https://i.imgur.com/IHN53sU.png"
     </p>
 
 
@@ -71,7 +71,7 @@ Displayed is the relationship between my two tables in the database hosted on GC
 #### CI Pipeline 
 
 <p align="center">
-    <img width="500" height="750" src="https://i.imgur.com/ZSWJJsV.png"
+    <img width="500" height="500" src="https://i.imgur.com/ZSWJJsV.png"
     </p>
     
     
@@ -90,29 +90,29 @@ Displayed is the relationship between my two tables in the database hosted on GC
     </p>
 
 <p align="center">
-    <img width="500" height="750" src="https://i.imgur.com/wu1JZVf.png"
+    <img width="500" height="500" src="https://i.imgur.com/wu1JZVf.png"
     </p>
     
 <p align="center">
-    <img width="500" height="750" src="https://i.imgur.com/tGFZqpw.png"
+    <img width="500" height="500" src="https://i.imgur.com/tGFZqpw.png"
     </p>
     
 <p align="center">
-    <img width="500" height="750" src="https://i.imgur.com/7RxFTv3.png"
+    <img width="500" height="500" src="https://i.imgur.com/7RxFTv3.png"
     </p>
     
 <p align="center">
-    <img width="500" height="750" src="https://i.imgur.com/vHl8rc1.png"
+    <img width="500" height="500" src="https://i.imgur.com/vHl8rc1.png"
     </p>
     
 <p align="center">
-    <img width="500" height="750" src="https://i.imgur.com/GufjAKf.png"
+    <img width="500" height="500" src="https://i.imgur.com/GufjAKf.png"
     </p>
 
 #### Risk Assessment 
 
 <p align="center">
-    <img width="500" height="750" src="https://i.imgur.com/yKjR0gw.png"
+    <img width="500" height="500" src="https://i.imgur.com/yKjR0gw.png"
     </p>
 
 #### Difficulties, Takeaways and Future Improvements 
