@@ -62,7 +62,7 @@ Trello above: Splitting up Must Have, Should Have and Could Have for accounts an
 Displayed is the relationship between my two tables in the database hosted on GCP. A one to many relationships from the primary key in the User table joining on the foreign key in the Games table. 
 
 <p align="center">
-    <img width="700" height="600" src="https://i.imgur.com/IHN53sU.png"
+    <img width="600" height="300" src="https://i.imgur.com/YhtmfEP.png"
     </p>
 
 
