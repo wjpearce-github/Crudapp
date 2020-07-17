@@ -123,6 +123,7 @@ Going forward in the next project I think having a far more basic and realistic 
 Finally, although not mandatory I would have liked to spend some time adding some CSS to my app as it looks very basic. Possibly in the future even adding some Java script for extended functionality. Additionally, in the next iteration I plan to add a third table listing the Game Developers including information about them.
 
 
-### William Pearce
+### Author
+#### William Pearce
 
 
