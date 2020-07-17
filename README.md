@@ -71,7 +71,7 @@ Displayed is the relationship between my two tables in the database hosted on GC
 #### CI Pipeline 
 
 <p align="center">
-    <img width="500" height="500" src="https://i.imgur.com/ZSWJJsV.png"
+    <img width="750" height="750" src="https://i.imgur.com/ZSWJJsV.png"
     </p>
     
     
